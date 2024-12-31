@@ -1,81 +1,24 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Accueil AgenceImmo{% endblock %}
+{% block title %}K & A Immo | Accueil{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
 <head>
-    <link rel="stylesheet" href="{{asset('css/Home.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/Home.css') }}">
 </head>
-
-<main>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>REAL ESTATE<br>AGENCY</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
-            <button class="view-details">VIEW DETAILS</button>
+<div class="first">
+    <div class="card" style="width: 28rem; border-radius: 10px;">
+         
+        <div class="card-body">
+            <h5 class="card-title">Maison Moderne à Vendre</h5>
+            <p class="card-text">
+                Découvrez cette maison moderne située dans un quartier calme. Idéale pour les familles, elle offre de grands espaces et un design contemporain.
+                Profitez d’un cadre de vie agréable à proximité de toutes commodités.
+            </p>
+            <a href="#" class="btn btn-primary">Voir les détails</a>
         </div>
-        <div class="property-info">
-            <h2>PROPPERTY</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="property-contact">
-                <h3>FEATURE PROPERTY</h3>
-                <div class="phone">529-533.59</div>
-                <p>PRICE FORTUNE</p>
-                <button class="view-details">VIEW DETAILS</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="property-filters">
-        <div class="filter-item">
-            <i class="fas fa-home"></i>
-            <span>TYPE</span>
-        </div>
-        <div class="filter-item">
-            <i class="fas fa-pencil"></i>
-            <span>TYE</span>
-        </div>
-        <div class="filter-item">
-            <i class="fas fa-location-dot"></i>
-            <span>NACRE</span>
-        </div>
-        <div class="filter-item">
-            <i class="fas fa-dollar-sign"></i>
-            <span>PRICE</span>
-        </div>
-        <div class="filter-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>LOCATION</span>
-        </div>
-        <div class="filter-item">
-            <i class="fas fa-building"></i>
-            <span>STYLE</span>
-        </div>
-        <div class="search-stats">
-            <div>270W</div>
-            <div>32440F</div>
-        </div>
-    </section>
-
-    <section class="featured-properties">
-        <h2>FEATURED PROPERTY</h2>
-        <div class="property-grid">
-            {% for property in properties %}
-                <div class="property-card">
-                    <img src="{{ property.image }}" alt="{{ property.name }}">
-                    <div class="property-details">
-                        <h3>{{ property.name }}</h3>
-                        <p class="price">${{ property.price }}</p>
-                        <button class="view-details">VIEW DETAILS</button>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </section>
-</main>
+    </div>
+</div>
+<h1>hello</h1>
 {% endblock %}
+

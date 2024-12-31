@@ -11,17 +11,8 @@ class HomeController extends AbstractController
     #[Route('/', name: 'app_home')]
     public function index(): Response
     {
-        $properties = [
-            [
-                'name' => 'Property Name',
-                'price' => '423.30',
-                'image' => '/images/house1.jpg'
-            ],
-            // Ajoutez d'autres propriétés...
-        ];
-
         return $this->render('home/index.html.twig', [
-            'properties' => $properties
+            'controller_name' => 'HomeController',
         ]);
     }
 }
